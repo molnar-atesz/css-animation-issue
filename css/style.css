@@ -1,0 +1,660 @@
+body {
+    color: #333333;
+    font-size: 16px;
+    font-family: 'Open Sans';
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.center-box {
+    margin: 0 auto;
+    width: 1180px;
+}
+
+header {
+    min-height: 80px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+    float: left;
+    margin-top: 15px;
+}
+
+#logo a img {
+    width: 195px;
+    height: auto;
+}
+
+nav {
+    margin: 30px 0;
+}
+
+nav,
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    float: left;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    padding: 0 10px;
+    color: inherit;
+}
+
+#banner {
+    background: #f7f7f7 url("../img/flower.png") top right;
+    position: relative;
+    overflow: hidden;
+    /*overflow: hidden not working, messes up whole layout, overflow-y: clip works*/
+}
+
+#banner-text {
+    padding: 110px 0 190px 0;
+}
+
+#banner-images .center-box {
+    height: 100%;
+}
+
+#banner-images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+#images {
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+#cosmetics {
+    position: absolute;
+    width: 330px;
+    bottom: 20px;
+    left: 0;
+}
+
+#cosmetics1 {
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 25%;
+    opacity: 0;
+    animation: 2s slideinright ease 1.5s forwards;
+    -webkit-animation: 2s slideinright ease 1.5s forwards;
+    -moz-animation: 2s slideinright ease 1.5s forwards;
+    -o-animation: 2s slideinright ease 1.5s forwards;
+}
+
+#cosmetics2 {
+    position: absolute;
+    left: 205px;
+    bottom: 20px;
+    width: 20%;
+    opacity: 0;
+    animation: 2s slideinright ease 2s forwards;
+    -webkit-animation: 2s slideinright ease 2s forwards;
+    -moz-animation: 2s slideinright ease 2s forwards;
+    -o-animation: 2s slideinright ease 2s forwards;
+}
+
+#cosmetics3 {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
+    width: 35%;
+    opacity: 0;
+    animation: 2s slideinright ease 2.5s forwards;
+    -webkit-animation: 2s slideinright ease 2.5s forwards;
+    -moz-animation: 2s slideinright ease 2.5s forwards;
+    -o-animation: 2s slideinright ease 2.5s forwards;
+}
+
+#cosmetics4 {
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    width: 35%;
+    opacity: 0;
+    animation: 2s slideinright ease 0.5s forwards;
+    -webkit-animation: 2s slideinright ease 0.5s forwards;
+    -moz-animation: 2s slideinright ease 0.5s forwards;
+    -o-animation: 2s slideinright ease 0.5s forwards;
+}
+
+#cosmetics5 {
+    position: absolute;
+    left: 120px;
+    bottom: 40px;
+    width: 40%;
+    opacity: 0;
+    animation: 2s slideinright ease 1s forwards;
+    -webkit-animation: 2s slideinright ease 1s forwards;
+    -moz-animation: 2s slideinright ease 1s forwards;
+    -o-animation: 2s slideinright ease 1s forwards;
+}
+
+#beauty-model {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    animation: 2s slideinright ease 0s forwards;
+    -webkit-animation: 2s slideinright ease 0s forwards;
+    -moz-animation: 2s slideinright ease 0s forwards;
+    -o-animation: 2s slideinright ease 0s forwards;
+}
+
+#badge {
+    position: absolute;
+    right: 0;
+    bottom: 75px;
+    background: url("../img/menta-bg.gif");
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 28px;
+    height: 85px;
+    width: 85px;
+    line-height: 65px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: 2s rotatein ease 3s forwards;
+    -webkit-animation: 2s rotatein ease 3s forwards;
+    -moz-animation: 2s rotatein ease 3s forwards;
+    -o-animation: 2s rotatein ease 3s forwards;
+}
+
+h1,
+h2,
+h3 {
+    text-transform: uppercase;
+}
+
+h1,
+h2 {
+    font-family: 'Abril Fatface';
+}
+
+h1 {
+    font-size: 40px;
+    display: inline-block;
+    opacity: 0;
+    animation: 2s slideinleft ease 0s forwards;
+    -webkit-animation: 2s slideinleft ease 0s forwards;
+    -moz-animation: 2s slideinleft ease 0s forwards;
+    -o-animation: 2s slideinleft ease 0s forwards;
+}
+
+#banner h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #fb6c79;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: 2s slideinleft ease 0.5s forwards;
+    -webkit-animation: 2s slideinleft ease 0.5s forwards;
+    -moz-animation: 2s slideinleft ease 0.5s forwards;
+    -o-animation: 2s slideinleft ease 0.5s forwards;
+}
+
+#banner p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    width: 45%;
+    opacity: 0;
+    animation: 2s slideinleft ease 1s forwards;
+    -webkit-animation: 2s slideinleft ease 1s forwards;
+    -moz-animation: 2s slideinleft ease 1s forwards;
+    -o-animation: 2s slideinleft ease 1s forwards;
+}
+
+.button {
+    display: inline-block;
+    background: url("../img/rosy-bg.gif");
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+}
+
+#banner .button {
+    opacity: 0;
+    animation: 2s slideinleft ease 1.5s forwards;
+    -webkit-animation: 2s slideinleft ease 1.5s forwards;
+    -moz-animation: 2s slideinleft ease 1.5s forwards;
+    -o-animation: 2s slideinleft ease 1.5s forwards;
+}
+
+#content {
+    clear: both;
+}
+
+h2 {
+    font-size: 34px;
+    text-align: center;
+    margin: 55px 0 35px 0;
+}
+
+.row {
+    margin: 0 -20px;
+}
+
+.product-item {
+    float: left;
+    width: 25%;
+    padding: 0 20px;
+}
+
+.product {
+    padding: 15px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product p:first-of-type {
+    font-weight: 700;
+}
+
+.cart-button {
+    text-transform: uppercase;
+    color: #fb6c79;
+    font-weight: 700;
+    line-height: 50px;
+}
+
+.one-half {
+    margin-top: 45px;
+    margin-bottom: 85px;
+    float: left;
+    width: 50%;
+    padding: 0 20px;
+}
+
+.one-half img {
+    width: 100%;
+}
+
+#gift {
+    padding: 30px 30px 50px 30px;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 1.5;
+}
+
+#gift h3 {
+    font-family: 'Abril Fatface';
+    font-size: 30px;
+    margin: 20px 0 20px 0;
+}
+
+#gift p {
+    margin-bottom: 40px;
+}
+
+footer {
+    clear: both;
+    background: #e2e2e2;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+#links {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#links ul li {
+    display: inline-block;
+    border-right: solid 1px #979797;
+    padding: 0 20px;
+}
+
+#links ul li:last-of-type {
+    padding-right: 0;
+    border-right: none;
+}
+
+/*animation for banner-text - 0% = from, 100% = to*/
+@keyframes slideinleft {
+    0% {
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideinleft {
+    0% {
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slideinleft {
+    0% {
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideinleft {
+    0% {
+        margin-left: -50px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+/*animation for banner-images - 0% = from, 100% = to*/
+
+@keyframes slideinright {
+    0% {
+        margin-right: -150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slideinright {
+    0% {
+        margin-right: -150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes slideinright {
+    0% {
+        margin-right: -150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes slideinright {
+    0% {
+        margin-right: -150px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-right: 0;
+        opacity: 1;
+    }
+}
+
+/*animation for badge*/
+@keyframes rotatein {
+    0% {
+        opacity: 0;
+        transform: rotate(200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes rotatein {
+    0% {
+        opacity: 0;
+        transform: rotate(200deg);
+        -webkit-transform: rotate(200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+    }
+}
+
+@-moz-keyframes rotatein {
+    0% {
+        opacity: 0;
+        transform: rotate(200deg);
+        -moz-transform: rotate(200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+    }
+}
+
+@-o-keyframes rotatein {
+    0% {
+        opacity: 0;
+        transform: rotate(200deg);
+        -o-transform: rotate(200deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+    }
+}
+
+/*responsiveness setup*/
+@media only screen and (max-width: 1180px) {
+    .center-box {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .one-half {
+        width: 50%;
+    }
+
+    #beauty-model img {
+        opacity: 0;
+    }
+}
+
+@media only screen and (min-width: 976px) and (max-width: 1024px) {
+    .one-half {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .one-half img {
+        margin-top: 20px;
+    }
+    
+    #gift {
+        margin-bottom: 20px;
+    }
+    
+    .product {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 975px) {
+    #logo,
+    nav,
+    nav ul,
+    nav ul li,
+    nav ul li a {
+        float: none;
+        width: 100%;
+        clear: both;
+    }
+
+    #logo {
+        text-align: center;
+    }
+
+    header {
+        overflow: hidden;
+    }
+
+    nav ul li a {
+        padding: 10px 0;
+        border-top: solid 1px rgba(0, 0, 0, 0.2);
+        display: inline-block;
+    }
+
+    .product {
+        min-height: 350px;
+    }
+
+    #content .row {
+        margin: 0;
+    }
+
+    .one-half {
+        width: 50%;
+    }
+
+    #gift {
+        max-height: 240px;
+    }
+
+    #gift h3 {
+        font-size: 26px;
+        margin: 0px 0 10px 0;
+    }
+
+    #gift p {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #badge {
+        right: 150px;
+        bottom: 70px;
+    }
+
+    .product-item {
+        width: 50%;
+        margin-bottom: 10px;
+        padding: 10px;
+        min-height: 350px;
+    }
+
+    .one-half {
+        width: 100%;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    #gift {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    #banner h3 {
+        font-size: 28px;
+    }
+
+    #banner p {
+        width: 100%;
+    }
+
+    #banner-text {
+        padding: 50px 0 60px 0;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    #cosmetics {
+        opacity: 0;
+    }
+
+    #gift {
+        max-height: 280px;
+        padding: 15px;
+    }
+
+    #gift h3 {
+        font-size: 22px;
+        margin: 0;
+    }
+
+    #gift p {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+}
